@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+<p class="naslov">Hello!</p>
+<p class="text">Welcome to my first web page! Feel free to look arround and find out more about me.</p>
+<p class="text">
+    <a href="/">Index</a>
+    <a href="/about_me">About me</a>
+    <a href="/portfolio">Portfolio</a>
+</p>
+{% block content %}
+{% endblock content %}
+</body>
+</html>
