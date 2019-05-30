@@ -4,4 +4,13 @@
 {% endblock title %}
  {% block content %}
  <p class="text">About me</p>
+ <form method="post" action="/contact">
+     <input type="text" name="contact-name" placeholder="Your name">
+     <br>
+     <input type="email" name="contact-email" placeholder="Your email">
+     <br>
+     <textarea name="contact-message" placeholder="Your message"></textarea>
+     <br>
+     <button type="submit">Pošlji</button>
+ </form>
  {% endblock content %}
